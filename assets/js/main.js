@@ -43,6 +43,11 @@ $(document).ready(function () {
     //   // To Scroll Up 1 Section
     //   // fv.data('fullView').scrollDown();
     // });
+  } else {
+    $(".nav-home").removeClass("active");
+    $(".navbar .navbar-nav .nav-item").click(function(){
+      $(".navbar .navbar-toggler").click();
+    });
   }
 
   const swiperBusinesses = new Swiper(".swiper-businesses", {
@@ -95,4 +100,26 @@ $(document).ready(function () {
       },
     },
   });
+
+  if ($('.products').length) {
+    $('.products .products-tabs .nav-link').click(function() {
+        var imgSrc = $(this).attr('imgsrc');
+        $('.products .products-tabs .nav-link').removeClass("active");
+        $(this).addClass("active")
+        $('.tab_img img').attr('src', imgSrc);
+
+    })
+    $('.products .products-tabs .nav-link').mouseover(function() {
+      var imgSrc = $(this).attr('imgsrc');
+      $('.products .products-tabs .nav-link').removeClass("active");
+      $(this).addClass("active")
+      $('.tab_img img').attr('src', imgSrc);
+
+  })
+
+}
+
+  // $(".products .products-tabs .nav-link").hover(function(){
+  //   $(this).click()
+  // });
 });
