@@ -1,0 +1,12 @@
+@media (min-width: 576px) {
+  .container-start {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-end {
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=custom-ltr.css.map */

@@ -1,0 +1,14 @@
+$start: right;
+$end: left;
+
+.container-start {
+    @media (min-width: 576px) {
+      margin-#{$start}: auto;
+    }
+  }
+  
+  .container-end {
+    @media (min-width: 576px) {
+      margin-#{$end}: auto;
+    }
+  }

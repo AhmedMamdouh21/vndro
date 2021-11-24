@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAII,MAAM,EAAE,SAAS,EAAE,KAAK;EAD5B,AAAA,gBAAgB,CAAC;IAEX,YAAgB,EAAS,IAAI;GAEhC;;;AAGC,MAAM,EAAE,SAAS,EAAE,KAAK;EAD1B,AAAA,cAAc,CAAC;IAEX,WAAc,EAAS,IAAI;GAE9B",
+    "sources": [
+        "custom-rtl.scss"
+    ],
+    "names": [],
+    "file": "custom-rtl.css"
+}

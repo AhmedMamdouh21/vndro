@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIE,MAAM,EAAE,SAAS,EAAE,KAAK;EAD1B,AAAA,gBAAgB,CAAC;IAEb,WAAgB,EAAS,IAAI;GAEhC;;;AAGC,MAAM,EAAE,SAAS,EAAE,KAAK;EAD1B,AAAA,cAAc,CAAC;IAEX,YAAc,EAAS,IAAI;GAE9B",
+    "sources": [
+        "custom-ltr.scss"
+    ],
+    "names": [],
+    "file": "custom-ltr.css"
+}
