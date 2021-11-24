@@ -1,5 +1,4 @@
 /* Transition */
-/* Font Family */
 @media (max-width: 991.98px) {
   body,
   html {
@@ -8,7 +7,6 @@
 }
 
 body {
-  font-family: "Barlow", sans-serif;
   color: #000000;
   background-color: #ffffff;
   font-weight: 400;
@@ -108,6 +106,13 @@ body {
   font-weight: 500;
 }
 
+.login {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #000000;
+  text-transform: capitalize;
+}
+
 .btn_main {
   border: none;
   border-radius: 0;
@@ -115,7 +120,6 @@ body {
           box-shadow: none !important;
   outline: none !important;
   padding: 0.5rem 2.5rem !important;
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: #000000;
   -webkit-transition: all 0.3s ease-in-out;
@@ -154,8 +158,6 @@ body {
   bottom: 0;
   content: ".";
   position: absolute;
-  -webkit-transform: translate(-100%, 0);
-          transform: translate(-100%, 0);
 }
 
 .dot-yellow.dot-yellow::after,
@@ -310,13 +312,6 @@ body {
   }
 }
 
-.navbar .nav-end .login {
-  text-decoration: underline;
-  font-weight: 700;
-  color: #000000;
-  text-transform: capitalize;
-}
-
 .navbar .navbar-toggler {
   border: none;
   border-radius: 0;
@@ -428,7 +423,6 @@ section {
 @media (min-width: 992px) {
   .home .home-text::before {
     z-index: -1;
-    left: -12vw;
     width: 12vw;
     height: 100%;
   }
@@ -562,8 +556,6 @@ section {
   line-height: normal;
   position: relative;
   padding: 0;
-  text-align: left;
-  padding-left: 8px;
   margin-bottom: 1.5rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -573,7 +565,6 @@ section {
   content: "";
   position: absolute;
   top: 0;
-  left: 0;
   width: 4px;
   height: 0%;
   background-color: #fdd939;
@@ -845,30 +836,7 @@ section {
   }
 }
 
-@media (min-width: 992px) {
-  .space-end {
-    padding-right: 5rem;
-  }
-}
-
 /* Override Styles */
-#fv-dots ul li a span {
-  background-color: #5d5d5d;
-  border-radius: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-#fv-dots ul a.active span {
-  width: 11px;
-  height: 11px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: #000000;
-}
-
 .swiper-container {
   width: 100%;
   height: auto;

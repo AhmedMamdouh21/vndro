@@ -1,6 +1,14 @@
 $start: left;
 $end: right;
 
+/* Font Family */
+$fontBarlow: "Barlow", sans-serif;
+$fontRoboto: "Roboto", sans-serif;
+
+body {
+  font-family: $fontBarlow;
+}
+
 .container-start {
   @media (min-width: 576px) {
     margin-#{$start}: auto;
@@ -13,3 +21,66 @@ $end: right;
   }
 }
 
+// Button
+.btn_main  {
+  font-family: $fontRoboto;
+}
+
+// .swiper-button-next,
+// .swiper-container-rtl .swiper-button-prev {
+//   #{$end}: auto;
+//   #{$start}: 70px;
+//   @media (max-width: 991.98px) {
+//     #{$start}: auto;
+//     #{$end}: 30vw;
+//   }
+// }
+
+// .swiper-button-prev,
+// .swiper-container-rtl .swiper-button-next {
+//   @media (max-width: 991.98px) {
+//     #{$start}: 30vw;
+//     #{$end}: auto;
+//   }
+// }
+
+
+
+.space-end {
+  
+  @media (min-width: 992px) { padding-right: 5rem; }
+
+}
+
+.dot-yellow,
+.dot-white {
+  &::after {
+    transform: translate(-100%, 0);
+  }
+}
+
+
+.home {
+  .home-text {
+    &::before {
+      content: "";
+      @media (min-width: 992px) {
+        #{$start}: -12vw;
+      }
+    }
+  }
+}
+
+.products {
+  .products-tabs {
+    .nav-pills {
+      .nav-link  {
+        text-align: #{$start};
+        padding-#{$start}: 8px;
+        &::before {
+          #{$start}: 0;
+        }
+      }
+    }
+  }
+}

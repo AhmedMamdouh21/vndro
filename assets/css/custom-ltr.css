@@ -1,3 +1,8 @@
+/* Font Family */
+body {
+  font-family: "Barlow", sans-serif;
+}
+
 @media (min-width: 576px) {
   .container-start {
     margin-left: auto;
@@ -8,5 +13,40 @@
   .container-end {
     margin-right: auto;
   }
+}
+
+.btn_main {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .space-end {
+    padding-right: 5rem;
+  }
+}
+
+.dot-yellow::after,
+.dot-white::after {
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.home .home-text::before {
+  content: "";
+}
+
+@media (min-width: 992px) {
+  .home .home-text::before {
+    left: -12vw;
+  }
+}
+
+.products .products-tabs .nav-pills .nav-link {
+  text-align: left;
+  padding-left: 8px;
+}
+
+.products .products-tabs .nav-pills .nav-link::before {
+  left: 0;
 }
 /*# sourceMappingURL=custom-ltr.css.map */

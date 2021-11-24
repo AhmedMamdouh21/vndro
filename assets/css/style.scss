@@ -9,9 +9,7 @@ $red: #ee3d3c;
 /* Transition */
 $transitionFast: all 0.3s ease-in-out;
 $transitionSlow: all 0.6s ease-in-out;
-/* Font Family */
-$fontBarlow: "Barlow", sans-serif;
-$fontRoboto: "Roboto", sans-serif;
+
 
 body,
 html {
@@ -20,7 +18,6 @@ html {
   }
 }
 body {
-  font-family: $fontBarlow;
   color: $black;
   background-color: $white;
   font-weight: 400;
@@ -107,6 +104,12 @@ body {
 .font-medium {
   font-weight: 500;
 }
+.login {
+  text-decoration: underline;
+  font-weight: 700;
+  color: $black;
+  text-transform: capitalize;
+}
 
 // Button
 .btn_main {
@@ -115,7 +118,6 @@ body {
   box-shadow: none !important;
   outline: none !important;
   padding: 0.5rem 2.5rem !important;
-  font-family: $fontRoboto;
   font-weight: 700;
   color: $black;
   transition: $transitionFast;
@@ -146,7 +148,6 @@ body {
     bottom: 0;
     content: ".";
     position: absolute;
-    transform: translate(-100%, 0);
   }
 
   &.dot-yellow {
@@ -274,12 +275,7 @@ body {
        }
     }
 
-    .login {
-      text-decoration: underline;
-      font-weight: 700;
-      color: $black;
-      text-transform: capitalize;
-    }
+  
   }
 
   .navbar-toggler{
@@ -372,7 +368,6 @@ section {
       background-color: $yellow;
       @media (min-width: 992px) {
         z-index: -1;
-        left: -12vw;
         width: 12vw;
         height: 100%;
       }
@@ -470,8 +465,6 @@ section {
         line-height: normal;
         position: relative;
         padding: 0;
-        text-align: left;
-        padding-left: 8px;
         margin-bottom: 1.5rem;
         transition: $transitionFast;
         
@@ -480,7 +473,6 @@ section {
           content: "";
           position: absolute;
           top: 0;
-          left: 0;
           width: 4px;
           height: 0%;
           background-color: $yellow;
@@ -680,13 +672,14 @@ section {
 .swiper-container-rtl .swiper-button-next {
   transform: rotate(180deg);
 }
+
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  right: auto;
-  left: 70px;
+ right: auto;
+ left: 70px;
   @media (max-width: 991.98px) {
-    left: auto;
-    right: 30vw;
+   left: auto;
+   right: 30vw;
   }
 }
 
@@ -694,30 +687,24 @@ section {
 .swiper-container-rtl .swiper-button-next {
   @media (max-width: 991.98px) {
     left: 30vw;
-    right: auto;
+   right: auto;
   }
 }
 
-.space-end {
-  
-  @media (min-width: 992px) { padding-right: 5rem; }
-
-}
-
 /* Override Styles */
-#fv-dots ul li a span {
-  background-color: $gray;
-  border-radius: 0;
-  transition: $transitionFast;
-  transform: rotate(0deg);
-}
+// #fv-dots ul li a span {
+//   background-color: $gray;
+//   border-radius: 0;
+//   transition: $transitionFast;
+//   transform: rotate(0deg);
+// }
 
-#fv-dots ul a.active span {
-  width: 11px;
-  height: 11px;
-  transform: rotate(45deg);
-  background-color: $black;
-}
+// #fv-dots ul a.active span {
+//   width: 11px;
+//   height: 11px;
+//   transform: rotate(45deg);
+//   background-color: $black;
+// }
 
 .swiper-container {
   width: 100%;

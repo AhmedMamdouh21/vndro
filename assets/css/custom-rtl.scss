@@ -1,6 +1,16 @@
 $start: right;
 $end: left;
 
+html, 
+body {
+  direction: rtl;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+
+}
+
 .container-start {
     @media (min-width: 576px) {
       margin-#{$start}: auto;
@@ -12,3 +22,72 @@ $end: left;
       margin-#{$end}: auto;
     }
   }
+
+  .dot-yellow,
+.dot-white {
+  &::after {
+    transform: translate(100%, 0);
+  }
+}
+
+.navbar {
+  @media (max-width: 991.98px) {
+    direction: ltr;
+    .navbar-brand {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+}
+
+// .swiper-button-next,
+// .swiper-container-rtl .swiper-button-prev {
+//   #{$end}: auto;
+//   #{$start}: 70px;
+//   @media (max-width: 991.98px) {
+//     #{$start}: auto;
+//     #{$end}: 30vw;
+//   }
+// }
+
+// .swiper-button-prev,
+// .swiper-container-rtl .swiper-button-next {
+//   @media (max-width: 991.98px) {
+//     #{$start}: 30vw;
+//     #{$end}: auto;
+//   }
+// }
+
+.swiper-container-rtl .swiper-button-prev {
+  transform: rotate(0deg);
+}
+
+.space-end {
+  
+  @media (min-width: 992px) { padding-right: 5rem; }
+
+}
+
+.home {
+  .home-text {
+    &::before {
+      content: "";
+      @media (min-width: 992px) {
+        #{$start}: -12vw;
+      }
+    }
+  }
+}
+.products {
+  .products-tabs {
+    .nav-pills {
+      .nav-link  {
+        text-align: #{$start};
+        padding-#{$start}: 8px;
+        &::before {
+          #{$start}: 0;
+        }
+      }
+    }
+  }
+}

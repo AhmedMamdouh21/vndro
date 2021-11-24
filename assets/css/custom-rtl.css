@@ -1,3 +1,12 @@
+html,
+body {
+  direction: rtl;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
 @media (min-width: 576px) {
   .container-start {
     margin-right: auto;
@@ -8,5 +17,51 @@
   .container-end {
     margin-left: auto;
   }
+}
+
+.dot-yellow::after,
+.dot-white::after {
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+@media (max-width: 991.98px) {
+  .navbar {
+    direction: ltr;
+  }
+  .navbar .navbar-brand {
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+
+.swiper-container-rtl .swiper-button-prev {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+@media (min-width: 992px) {
+  .space-end {
+    padding-right: 5rem;
+  }
+}
+
+.home .home-text::before {
+  content: "";
+}
+
+@media (min-width: 992px) {
+  .home .home-text::before {
+    right: -12vw;
+  }
+}
+
+.products .products-tabs .nav-pills .nav-link {
+  text-align: right;
+  padding-right: 8px;
+}
+
+.products .products-tabs .nav-pills .nav-link::before {
+  right: 0;
 }
 /*# sourceMappingURL=custom-rtl.css.map */
