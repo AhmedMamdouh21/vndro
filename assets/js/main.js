@@ -53,23 +53,27 @@ $(document).ready(function () {
   const swiperBusinesses = new Swiper(".swiper-businesses", {
     slidesPerView: 5,
     slidesPerColumn: 3,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     spaceBetween: 15,
     navigation: {
       nextEl: ".swiper-businesses .swiper-button-next",
       prevEl: ".swiper-businesses .swiper-button-prev",
     },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       500: {
           slidesPerView: 2,
           slidesPerColumn: 2,
-          slidesPerGroup :2,
+          slidesPerGroup: 1,
           spaceBetween: 15,
       },
       1200: {
           slidesPerView: 4,
           slidesPerColumn: 2,
-          slidesPerGroup :3,
+          slidesPerGroup: 1,
           spaceBetween: 15,
       },
     
@@ -79,23 +83,27 @@ $(document).ready(function () {
   const swiperPartners = new Swiper(".swiper-partners", {
     slidesPerView: 3,
     slidesPerColumn: 3,
-    slidesPerGroup: 3,
+    slidesPerGroup: 1,
     spaceBetween: 15,
     navigation: {
       nextEl: ".swiper-partners .swiper-button-next",
       prevEl: ".swiper-partners .swiper-button-prev",
     },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       500: {
         slidesPerView: 2,
         slidesPerColumn: 2,
-        slidesPerGroup :2,
+        slidesPerGroup: 1,
         spaceBetween: 15,
     },
       1200: {
           slidesPerView: 3,
           slidesPerColumn: 3,
-          slidesPerGroup :3,
+          slidesPerGroup: 1,
           spaceBetween: 15,
       },
     },
